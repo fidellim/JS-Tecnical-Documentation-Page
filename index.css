@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 25%;
+	height: auto;
+}
+
+.navbar-header {
+	height: 20%;
+	display: flex;
+	flex-direction: column;
+}
+
+.navbar-header h1 {
+	margin-bottom: 0.75rem;
+}
+
+.container-nav-links {
+	display: flex;
+	flex-direction: column;
+	height: 80%;
+	overflow-y: scroll;
+}
+
+.nav-link {
+	cursor: pointer;
+	padding: 1rem 1.75rem;
+	border-top: 1px solid #999;
+	text-decoration: none;
+	color: #000;
+	line-height: 1.5;
+}
+
+#navbar {
+	width: 300px;
+	border-right: 3px solid #999;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+}
+
+#main-doc {
+	margin-left: 300px;
+	position: absolute;
+	padding: 20px;
+	overflow-x: hidden;
+	background-color: #999;
+}
+
+#main-doc header {
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+/* utilities */
+p,
+ul li {
+	margin: 1.15rem 0;
+	line-height: 1.5;
+}
+
+ul li {
+	margin-left: 50px;
+}
+
+.img-center {
+	display: block;
+	margin: auto;
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* ---------------------------------------------------- */
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track of scrollbar*/
+::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+/* ---------------------------------------------------- */
