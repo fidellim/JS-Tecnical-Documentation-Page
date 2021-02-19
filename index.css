@@ -32,6 +32,7 @@ img {
 	border-top: 1px solid #999;
 	text-decoration: none;
 	color: #000;
+	font-size: 1rem;
 	line-height: 1.5;
 }
 
@@ -49,12 +50,26 @@ img {
 	position: absolute;
 	padding: 20px;
 	overflow-x: hidden;
-	background-color: #999;
 }
 
 #main-doc header {
 	font-weight: 700;
 	font-size: 2rem;
+}
+
+.main-section .-title {
+	margin-top: 1rem;
+}
+
+.reference_link {
+	font-weight: 700;
+	cursor: pointer;
+	font-size: 1.25rem;
+	color: rgb(5, 11, 100);
+}
+
+pre {
+	border-left: 4px solid #0e0342;
 }
 
 /* utilities */
@@ -66,6 +81,10 @@ ul li {
 
 ul li {
 	margin-left: 50px;
+}
+
+ul ul li {
+	margin-left: 100px;
 }
 
 .img-center {
@@ -98,3 +117,39 @@ ul li {
 	background: #555;
 }
 /* ---------------------------------------------------- */
+
+@media (max-width: 880px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	img {
+		width: 75px;
+	}
+
+	#navbar {
+		margin-top: 1rem;
+	}
+
+	#navbar,
+	#main-doc {
+		border: 0;
+		position: static;
+		width: 100%;
+		margin-left: 0;
+		overflow-x: hidden;
+	}
+
+	.container-nav-links {
+		height: 250px;
+		overflow-y: scroll;
+		direction: rtl;
+		border-top: 2.5px solid gray;
+		border-bottom: 2.5px solid gray;
+	}
+
+	.nav-link:first-child {
+		border: 0;
+	}
+}
