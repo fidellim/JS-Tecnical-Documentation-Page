@@ -1,1 +1,1 @@
-# JS-Tecnical-Documentation-Page
+# JS-Technical-Documentation-Page
